@@ -1,0 +1,22 @@
+[Unit]
+Description=Unseal TPM and retrieve LUKS encryption key file to unlock root
+
+Before=cryptsetup-pre.target
+Before=cryptsetup.target
+
+Wants=cryptsetup-pre.target
+
+Requires=dev-%i.device
+After=dev-%i.device
+
+DefaultDependencies=no
+
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/unseal-tpm.sh
+
+
+[Install]
+WantedBy=cryptsetup.target
+
