@@ -2,14 +2,14 @@
 Dracut module to unseal TPM and retrieve password to pass to LUKS
 
 ## Requirements
-` dracut tpm2-tools `
+` dracut tpm2-tools cryptsetup `
 
 ## Commandline Arguments
 The following should be set in the kernel commandline:
 ```
 rd.luks.key             # Default: /crypto_keyfile.bin
-rd.lukes_tpm2_auth      # Default: 0x81000000
-r.luks_tpm2_handle      # Default: pcr:sha1:0,2,4,7
+rd.luks_tpm2_auth       # Default: 0x81000000
+rd.luks_tpm2_handle     # Default: pcr:sha1:0,2,4,7
 ```
 
 ## How to Install
