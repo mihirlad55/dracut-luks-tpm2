@@ -14,5 +14,5 @@ install -Dm 755 "80luks-tpm2/unseal-tpm@.service" "$MODULE_DIR/unseal-tpm@.servi
 install -Dm 755 "80luks-tpm2/90-tpmrm.rules" "$MODULE_DIR/90-tpmrm.rules"
 
 mkdir -p "/usr/share/doc/$PKG_NAME"
-install -Dm 644 LICENSE "/usr/share/doc/$PKG_NAME/LICENSE"
-install -Dm 644 README.md "/usr/share/doc/$PKG_NAME/README.md"
+install -Dm 644 LICENSE "$BASE_INSTALL_PREFIX/usr/share/doc/$PKG_NAME/LICENSE"
+install -Dm 644 README.md "$BASE_INSTALL_PREFIX/usr/share/doc/$PKG_NAME/README.md"
