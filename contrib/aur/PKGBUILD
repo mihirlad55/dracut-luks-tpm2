@@ -1,10 +1,10 @@
 # Maintainer Mihir Lad <contact at mihirlad dot com>
-pkgname=dracut-luks-tpm2-module
-pkgver=1.0.1
+pkgname=dracut-luks-tpm2
+pkgver=1.0.2
 pkgrel=1
 pkgdesc="Dracut module to retrieve LUKS key from TPM"
 arch=('any')
-url='https://github.com/mihirlad55/dracut-luks-tpm2-module'
+url='https://github.com/mihirlad55/dracut-luks-tpm2'
 license=('GPL3')
 depends=('tpm2-tools' 'dracut')
 
